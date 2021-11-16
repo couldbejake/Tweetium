@@ -1,17 +1,7 @@
+const request = require('request');
 
-var url = 'http://graph.facebook.com/517267866/?fields=picture';
-
-http.get(url, function(res){
-    var body = '';
-
-    res.on('data', function(chunk){
-        body += chunk;
-    });
-
-    res.on('end', function(){
-        var fbResponse = JSON.parse(body);
-        console.log("Got a response: ", fbResponse.picture);
-    });
-}).on('error', function(e){
-      console.log("Got an error: ", e);
+request('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', { json: true }, (err, res, body) => {
+  if (err) { return console.log(err); }
+  console.log(body.url);
+  console.log(body.explanation);
 });
