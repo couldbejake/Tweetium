@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "http": "^0.0.1-security",
-    "request": "^2.81.0"
-  }
-}
