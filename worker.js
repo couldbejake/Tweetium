@@ -97,17 +97,15 @@ var onDone = function(data, search_query){
   var next_cursor = get_next_cursor(data)
   if(next_cursor && Object.entries(tweets).length > 0){
     process.send(Object.entries(tweets).length)
-    tweets = data.globalObjects.tweets
-    temp = 0
     for (const [key, value] of Object.entries(tweets)) {
-      if(temp == 0){
-      }
-      temp += 1
+      fs.appendFile('./collected/' + search_query + '.txt', value.text +'\n', function (err) {});
     }
     collect_tweets(onDone, search_query, next_cursor)
   } else {
   }
 }
 
-hashtag = "#blackmirror"
-collect_tweets(onDone, hashtag)
+process.on('message', function(hashtag) {
+  collect_tweets(onDone, hashtag)
+});
+

@@ -620,3 +620,6 @@ node_modules/verror/node_modules/assert-plus/package.json
 node_modules/verror/node_modules/assert-plus/README.md
 node_modules/verror/package.json
 node_modules/verror/README.md
+*.zip
+.DS_Store
+.DS_Store
