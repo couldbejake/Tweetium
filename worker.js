@@ -30,7 +30,6 @@ Object.size = function(obj) {
 
 function get_next_cursor(globalObjects){
 
-
   var instructions_ex = check_nested(globalObjects, 'timeline', 'instructions')
   if(globalObjects && instructions_ex){
     var instruction_count = Object.keys(globalObjects.timeline.instructions).length
@@ -46,6 +45,7 @@ function get_next_cursor(globalObjects){
     }
   }
   return false
+  
 }
 
 function check_nested(obj /*, level1, level2, ... levelN*/) {
