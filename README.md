@@ -1,5 +1,7 @@
 # Tweetium
 
+Preview - https://youtu.be/6S2vm31HEak
+
 A multi-threaded, user-agent ware python scraper for twitter written in node.js.
 
 phew that was a long sentence!
