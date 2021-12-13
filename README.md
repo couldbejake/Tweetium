@@ -11,10 +11,6 @@ but is far from optimied, any suggestions would be greatly appreciated!
 
 ## FAQ
 
-```How far is it way from completion?```
-
-We are not sure 2 weeks to 1 year away.
-
 ```Why is there a Python and a JS file?```
 
 The code was written in Python but we're also writing one in C++ and Node to test performence.
