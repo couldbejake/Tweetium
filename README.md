@@ -4,6 +4,10 @@ Preview - https://youtu.be/6S2vm31HEak
 
 A multi-threaded, user-agent ware python scraper for twitter written in node.js.
 
+# Do you have a version for Python?
+
+Check out https://github.com/couldbejake/TweetScrape_old
+
 ## FAQ
 
 ```Why is there a Python and a JS file?```
