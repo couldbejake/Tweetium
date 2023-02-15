@@ -10,4 +10,4 @@ Check out https://github.com/couldbejake/TweetScrape_old
 
 ```Why is there a Python and a JS file?```
 
-The code was written in Python but we're also writing one in C++ and Node to test performence.
+The code was written in Python but we're also writing one in C++ and Node to test performance.
